@@ -1,0 +1,86 @@
+
+
+body{
+    background-image: url("shara desert.jpg");
+    background-repeat: no-repeat;
+    width: 80%;
+}
+
+.header{
+    display: flex;
+    width: 80%;
+    color: white;
+    font-size: 25px;
+}
+.nav{
+    display: flex;
+    margin-left: 50%;
+}
+.box{
+   margin-top: 5%;
+   margin-left: 5%;
+}
+
+.middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5%;
+    column-gap: 5%;
+    height: 130vh;
+    margin: 5%;
+}
+
+#box1{
+    grid-row: 1 / span 2;
+    
+}
+
+#box2{
+    background-image: url("./pic-1.png");
+    border-radius: 10px;
+    text-align: center;
+}
+#box3{
+    background-image: url("./pic-2.png");
+    border-radius: 10px;
+    text-align: center;
+}
+#box4{
+    background-image: url("./pic-3.png");
+    border-radius: 10px;
+    text-align: center;
+}
+#box5{
+    background-image: url("./pic-4.png");
+    border-radius: 10px;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+.exp{
+    border-radius: 50px;
+    width: 35%;
+    height: 5%;
+}
+
+@media(max-width: 500px){
+
+body{
+    background-repeat: repeat-y;
+}
+.head{
+    display: block;
+}
+
+.middle{
+    display: inline-block;
+    width: 100%;
+    /* margin-right: 5%;
+    margin-left: 5%; */
+}
+
+}
